@@ -1,0 +1,13 @@
+services:
+  google-lens-scraper:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    shm_size: 1gb
+    environment:
+      - PORT=8000
+      # Optional — solve Google's captcha automatically when it shows up (see config.py).
+      # - CAPSOLVER_API_KEY=CAP-...
+      # Optional — sticky residential proxy for the Google Lens sessions.
+      # - GOOGLE_LENS_PROXY=http://user-session-{session}:pass@host:port

@@ -1,0 +1,10 @@
+bottle
+cheroot
+curl_cffi
+marshmallow
+lxml
+cssselect
+Pillow
+camoufox[geoip]
+browserforge
+psutil
